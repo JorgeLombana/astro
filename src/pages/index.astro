@@ -1,0 +1,30 @@
+---
+const titulo = "titulo de js";
+const color = 'danger'
+const hobbies = ['programar', 'leer', 'escribir', 'ver peliculas','programar', 'leer', 'escribir', 'ver peliculas']
+---
+
+<style>
+  body {
+    background-color: sienna;
+  }
+</style>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>{titulo}</h1>
+		<p>{hobbies[0]}</p>
+
+    <ul>
+      {hobbies.map(hobby => <li>{hobby}</li>)}
+    </ul>
+  </body>
+</html>
